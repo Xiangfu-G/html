@@ -3,23 +3,101 @@
     padding: 0;
 }
 
-li {
-    list-style: none;
-}
-
 a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 .w {
     width: 1200px;
+    /* text-align: center; */
     margin: 0 auto;
 }
 
+/* 声明字体 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+        url('../fonts/icomoon.woff?tomleg') format('woff'),
+        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 版心开始 */
+.style_red {
+    color: #c81623;
+}
+
+/* 快捷导航栏 */
+.shortcut {
+    height: 31px;
+    font-size: 12px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
 .fl {
-    float: left;
+    float: left
 }
 
 .fr {
     float: right;
 }
+
+.shortcut ul li {
+    float: left;
+}
+
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 13px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+.arrow_icon::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    margin-left: 5px;
+}
+
+/* 版心结束 */
+/* 头部开始 */
+.header {
+    position: relative;
+    height: 105px;
+    background-color: brown;
+}
+
+/* logo模块 */
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+}
+
+.logo a {
+    display: block;
+    font-size: 0px;
+    width: 171px;
+    height: 61px;
+    background: url(../images/logo.png) no-repeat;
+}
+
+/* search搜索模块 */
+.search {
+    width: 538px;
+    height: 36px;
+    border: 2px solid red;
+    background-color: aqua;
+}
+
+/* 头部结束 */
