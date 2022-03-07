@@ -17,6 +17,11 @@ li {
     margin: 0 auto;
 }
 
+input {
+    border: 0;
+    outline: none;
+}
+
 /* 声明字体 */
 @font-face {
     font-family: 'icomoon';
@@ -73,7 +78,6 @@ li {
 .header {
     position: relative;
     height: 105px;
-    background-color: brown;
 }
 
 /* logo模块 */
@@ -94,10 +98,28 @@ li {
 
 /* search搜索模块 */
 .search {
+    position: absolute;
+    top: 25px;
+    left: 346px;
     width: 538px;
     height: 36px;
-    border: 2px solid red;
-    background-color: aqua;
+    border: 2px solid #b1191a;
+}
+
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    float: left;
+    width: 80px;
+    height: 32px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #b1191a;
 }
 
 /* 头部结束 */
